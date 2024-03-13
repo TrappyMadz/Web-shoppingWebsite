@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rested Ruler : Boîtes</title>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+
+     <!-- Affichage de l'image à aggrandir en cas de clic-->
+     <div class="aggrand" onclick="sortieCadre();">
+      <img src="" alt="image aggrandie" class="imageAggrandie"></img>
+      <button onclick="sortieCadre();">Fermer</button>
+    </div>
+
+    <header>
+      <div class="logoJoli">
+        <img src="img/logo.png" alt="Logo du site" />
+        <div class="title"><h1>Rested Ruler</h1></div>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cards.html">Cartes</a>
+        <a href="mats.html">Tapis</a>
+        <a href="box.html">Boîtes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="menu">
+        <div class="haut">
+          <h2>Rested Ruler</h2>
+          <p>Boîtes</p>
+        </div>
+        <div class="bas">
+          <h2>Naviguer sur le site</h2>
+          <ul>
+            <li class="liCard"><a href="index.html">Accueil</a></li>
+            <li><a href="cards.html">Cartes</a></li>
+            <li><a href="mats.html">Tapis</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <article>
+        <h1>Boîtes de rangement :</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Visuel</th>
+              <th>Référence</th>
+              <th>Description</th>
+              <th>Prix</th>
+              <th class="stock">Stock</th>
+              <th>Acheter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="img/boxLight.png" alt="Boite LGT" onclick="agrand(10);"/>
+              </td>
+              <td>bLGT</td>
+              <td>Boîte de rangement motif "Lumière"</td>
+              <td>9,99€</td>
+              <td class="stock">65</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(0);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(0);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="img/boxDarkness.png" alt="Boîte DRK" onclick="agrand(11);"/>
+              </td>
+              <td>bDRK</td>
+              <td>Boîte de rangement motif "Ténèbres"</td>
+              <td>9,99€</td>
+              <td class="stock">68</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(1);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(1);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="img/boxFire.png" alt="Boîte FIR" onclick="agrand(12);"/>
+              </td>
+              <td>bFIR</td>
+              <td>Boîte de rangement motif "Feu"</td>
+              <td>9,99€</td>
+              <td class="stock">76</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(2);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(2);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="img/boxWater.png" alt="Boîte WTR" onclick="agrand(13);"/>
+              </td>
+              <td>bWTR</td>
+              <td>Boîte de rangement motif "Eau"</td>
+              <td>9,99€</td>
+              <td class="stock">27</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(3);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(3);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="img/boxWind.png" alt="Boîte WND" onclick="agrand(14);"/>
+              </td>
+              <td>bWND</td>
+              <td>Boîte de rangement motif "Vent"</td>
+              <td>9,99€</td>
+              <td class="stock">48</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(4);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(4);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button onclick="stock();">Stock</button>
+      </article>
+    </div>
+
+    <footer>
+      <p>
+        Copyright Rested Ruler <br />
+        Création :
+        <a href="https://www.linkedin.com/in/simon-charrier-ab96072a2/"
+          >Charrier Simon</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

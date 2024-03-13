@@ -1,0 +1,301 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Baloo 2", sans-serif;
+}
+
+header {
+  position: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+}
+
+header img {
+  position: relative;
+  height: 150px;
+}
+
+.title {
+  text-align: center;
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: aliceblue;
+  width: 20%;
+  padding: 10px;
+  border-bottom: 2px solid aliceblue;
+}
+
+nav a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  width: 25%;
+  border-right: 2px solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  z-index: 98;
+}
+
+.haut {
+  text-align: center;
+  border-bottom: 2px solid aliceblue;
+  width: 100%;
+}
+
+.bas {
+  text-align: center;
+  width: 100%;
+}
+
+.bas ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.bas li {
+  border-bottom: 2px dotted aliceblue;
+}
+
+.liCard {
+  border-top: 2px dotted aliceblue;
+}
+
+.bas a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.bas a:hover {
+  color: orange;
+}
+
+article {
+  width: 75%;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.mainLogo {
+  width: 25%;
+}
+
+footer {
+  width: 100%;
+  height: 30%;
+  border-top: 2px solid aliceblue;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: orange;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+td,
+th {
+  border: 2px solid aliceblue;
+}
+
+td {
+  padding: 10px;
+  width: 16%;
+}
+
+article img {
+  width: 100%;
+}
+
+.caseIMat {
+  width: 20%;
+}
+
+.caseICard {
+  width: 15%;
+}
+
+label {
+  padding: 10px;
+}
+
+input {
+  width: 15%;
+  height: 50%;
+  position: relative;
+  padding: 4px;
+}
+
+.formElement {
+  width: 100%;
+  transform: translate(30%, 0);
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  z-index: 98;
+}
+
+#selectFct {
+  height: 1%;
+  margin-top: 12px;
+}
+
+textarea {
+  width: 30%;
+  height: 150px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  margin: 10px;
+  left: 150px;
+}
+
+.stock {
+  display: none;
+}
+
+button {
+  background-color: orange;
+  width: 10%;
+  height: 3%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.quantAjout {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.quantAjout button {
+  transform: translate(-4%, 0);
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.quantPanier {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.quantPanier button {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  transform: translate(-1%, 0);
+}
+
+.logoJoli {
+  display: flex;
+  align-items: center;
+}
+
+.aggrand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+.aggrand button {
+  transform: translate(-5%, 0);
+}
+
+.erreur {
+  color: red;
+  align-self: center;
+  position: relative;
+}
+
+#errorNom {
+  left: 90px;
+}
+
+#errorPrenom {
+  left: 70px;
+}
+
+#errorMail {
+  left: 87px;
+}
+
+#nom {
+  left: 75px;
+}
+
+#prenom {
+  left: 55px;
+}
+
+#mail {
+  left: 70px;
+}
+
+#genreF {
+  right: 30px;
+}
+
+#labelF {
+  right: 130px;
+  position: relative;
+  top: 1px;
+}
+
+#genreM {
+  right: 200px;
+}
+
+#labelH {
+  right: 300px;
+  position: relative;
+  top: 1px;
+}
+
+#selectFct {
+  left: 80px;
+  position: relative;
+  bottom: 5px;
+}
+
+#obj {
+  left: 90px;
+}

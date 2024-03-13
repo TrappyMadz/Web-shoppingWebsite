@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js"></script>
+    <title>Rested Ruler : Tapis</title>
+  </head>
+  <body>
+
+     <!-- Affichage de l'image à aggrandir en cas de clic-->
+     <div class="aggrand" onclick="sortieCadre();">
+      <img src="" alt="image aggrandie" class="imageAggrandie"></img>
+      <button onclick="sortieCadre();">Fermer</button>
+    </div>
+
+    <header>
+      <div class="logoJoli">
+        <img src="img/logo.png" alt="Logo du site" />
+        <div class="title"><h1>Rested Ruler</h1></div>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cards.html">Cartes</a>
+        <a href="mats.html">Tapis</a>
+        <a href="box.html">Boîtes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="menu">
+        <div class="haut">
+          <h2>Rested Ruler</h2>
+          <p>Tapis</p>
+        </div>
+        <div class="bas">
+          <h2>Naviguer sur le site</h2>
+          <ul>
+            <li class="liCard"><a href="index.html">Accueil</a></li>
+            <li><a href="cards.html">Cartes</a></li>
+            <li><a href="box.html">Boîtes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <article>
+        <h1>Tapis de jeu :</h1>
+        <table>
+          <tbody>
+            <thead>
+              <tr>
+                <th>Visuel</th>
+                <th>Référence</th>
+                <th>Description</th>
+                <th>Prix</th>
+                <th class="stock">Stock</th>
+                <th>Acheter</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="caseIMat">
+                <img src="img/playmatCMB.png" alt="Tapis CMB" onclick="agrand(5);"/>
+              </td>
+              <td>pCMB</td>
+              <td>Tapis de jeu à motif  "Crimson Moon's Battleground"</td>
+              <td>14,99€</td>
+              <td class="stock">100</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(0);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(0);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="caseIMat">
+                <img src="img/playmatJRP.jpg" alt="Tapis JRP" onclick="agrand(6);"/>
+              </td>
+              <td>pJRP</td>
+              <td>Tapis de jeu à motif  "Judgement of the Rogue Planet"</td>
+              <td>14,99€</td>
+              <td class="stock">24</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(1);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(1);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="caseIMat">
+                <img src="img/playmatL1.png" alt="Tapis L1" onclick="agrand(7);"/>
+              </td>
+              <td>pL1</td>
+              <td>Tapis de jeu à motif  "Zero"</td>
+              <td>14,99€</td>
+              <td class="stock">61</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(2);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(2);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="caseIMat">
+                <img src="img/playmatADW.png" alt="Tapis ADW" onclick="agrand(8);"/>
+              </td>
+              <td>pADW</td>
+              <td>Tapis de jeu à motif  "Assault into the Demonic World"</td>
+              <td>14,99€</td>
+              <td class="stock">7</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(3);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(3);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="caseIMat">
+                <img src="img/playmatGOG.jpg" alt="Tapis GOG" onclick="agrand(9);"/>
+              </td>
+              <td>pGOG</td>
+              <td>Tapis de jeu à motif  "Games Of Gods"</td>
+              <td>14,99€</td>
+              <td class="stock">35</td>
+              <td>
+                <div class="quantAjout">
+                  <button class="butMin" onclick="moinsNbAjout(4);">-</button>
+                  <span class="nbAjout">0</span>
+                  <button class="butPlus" onclick="plusNbAjout(4);">+</button>
+                </div>
+                <div class="quantPanier">
+                  <button>Ajouter au Panier</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button onclick="stock();">Stock</button>
+      </article>
+    </div>
+
+    <footer>
+      <p>
+        Copyright Rested Ruler <br />
+        Création :
+        <a href="https://www.linkedin.com/in/simon-charrier-ab96072a2/"
+          >Charrier Simon</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

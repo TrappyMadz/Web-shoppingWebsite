@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rested Ruler : Contact</title>
+    <script src="js/scriptContact.js"></script>
+  </head>
+  <body class="contactBody">
+    <header>
+      <div class="logoJoli">
+        <img src="img/logo.png" alt="Logo du site" />
+        <div class="title"><h1>Rested Ruler</h1></div>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cards.html">Cartes</a>
+        <a href="mats.html">Tapis</a>
+        <a href="box.html">Boîtes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="menu">
+        <div class="haut">
+          <h2>Rested Ruler</h2>
+          <p>Contact</p>
+        </div>
+        <div class="bas">
+          <h2>Naviguer sur le site</h2>
+          <ul>
+            <li class="liCard"><a href="index.html">Accueil</a></li>
+            <li><a href="cards.html">Cartes</a></li>
+            <li><a href="box.html">Boîtes</a></li>
+            <li><a href="mats.html">Tapis</a></li>
+          </ul>
+        </div>
+      </div>
+      <article>
+        <h1>Demande de contact :</h1>
+        <div class="form">
+          <form name="contact" onsubmit="return validationForm();">
+            <div class="formElement">
+              <label for="date">Date du contact : </label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="formElement">
+              <label for="nom">Nom : </label>
+              <input
+                type="text"
+                id="nom"
+                placeholder="Entrez votre nom"
+                required
+              />
+              <span id="errorNom" class="erreur"></span>
+            </div>
+            <div class="formElement">
+              <label for="prenom">Prénom : </label>
+              <input
+                type="text"
+                id="prenom"
+                placeholder="Entrez votre prénom"
+                required
+              />
+              <span id="errorPrenom" class="erreur"></span>
+            </div>
+            <div class="formElement">
+              <label for="mail">Email : </label>
+              <input
+                type="text"
+                id="mail"
+                name="mail"
+                placeholder="exemple@xyz.com"
+                required
+                novalidate
+              />
+              <span id="errorMail" class="erreur"></span>
+            </div>
+            <div class="formElement" id="genre">
+              <label for="genreF">Genre : </label>
+              <input type="radio" id="genreF" name="radioGenre" required />
+              <label for="genreF" class="labelGenre" id="labelF">Femme</label>
+              <input type="radio" id="genreM" name="radioGenre" required />
+              <label for="genreM" class="labelGenre" id="labelH">Homme</label>
+            </div>
+            <div class="formElement">
+              <label for="naissance">Date de naissance : </label>
+              <input type="date" id="naissance" required />
+            </div>
+            <div class="formElement" id="dropDownFct">
+              <label for="fonction">Fonction : </label>
+              <select name="fonction" id="selectFct" required>
+                <option value="">--Choisissez une option--</option>
+                <option value="enseignant">Enseignant</option>
+                <option value="etudiant">Étudiant</option>
+                <option value="ing">Ingénieur</option>
+                <option value="ouvr">Ouvrier</option>
+                <option value="ceo">Chef d'Entreprise</option>
+                <option value="compt">Expert Comptable</option>
+                <option value="med">Médecin</option>
+                <option value="inf">Influenceur</option>
+                <option value="cuisine">Cuisinier</option>
+                <option value="accab">Policier</option>
+              </select>
+            </div>
+            <div class="formElement">
+              <label for="obj">Sujet : </label>
+              <input
+                type="text"
+                id="obj"
+                placeholder="Entrez le sujet de votre mail"
+                required
+              />
+            </div>
+            <div class="formElement" id="contenuContact">
+              <label for="contenu">Contenu : </label>
+              <textarea
+                required
+                placeholder="Entrez le contenu de votre mail"
+              ></textarea>
+            </div>
+            <div class="formElement">
+              <input type="submit" />
+            </div>
+          </form>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <p>
+        Copyright Rested Ruler <br />
+        Création :
+        <a href="https://www.linkedin.com/in/simon-charrier-ab96072a2/"
+          >Charrier Simon</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
