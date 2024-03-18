@@ -142,43 +142,6 @@ article img {
   width: 15%;
 }
 
-label {
-  padding: 10px;
-}
-
-input {
-  width: 15%;
-  height: 50%;
-  position: relative;
-  padding: 4px;
-}
-
-.formElement {
-  width: 100%;
-  transform: translate(30%, 0);
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
-  z-index: 98;
-}
-
-#selectFct {
-  height: 1%;
-  margin-top: 12px;
-}
-
-textarea {
-  width: 30%;
-  height: 150px;
-  resize: none;
-}
-
-input[type="submit"] {
-  background-color: orange;
-  margin: 10px;
-  left: 150px;
-}
-
 .stock {
   display: none;
 }
@@ -240,62 +203,30 @@ button {
   transform: translate(-5%, 0);
 }
 
-.erreur {
-  color: red;
-  align-self: center;
-  position: relative;
+.form {
+  width: 100%;
+  max-width: 450px;
+  margin: 1% auto;
 }
 
-#errorNom {
-  left: 90px;
+input[type="text"],
+input[type="date"],
+select,
+textarea,
+#labNais {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-right: 0;
+  margin-left: 0;
+  resize: vertical;
 }
 
-#errorPrenom {
-  left: 70px;
-}
-
-#errorMail {
-  left: 87px;
-}
-
-#nom {
-  left: 75px;
-}
-
-#prenom {
-  left: 55px;
-}
-
-#mail {
-  left: 70px;
-}
-
-#genreF {
-  right: 30px;
-}
-
-#labelF {
-  right: 130px;
-  position: relative;
-  top: 1px;
-}
-
-#genreM {
-  right: 200px;
-}
-
-#labelH {
-  right: 300px;
-  position: relative;
-  top: 1px;
-}
-
-#selectFct {
-  left: 80px;
-  position: relative;
-  bottom: 5px;
-}
-
-#obj {
-  left: 90px;
+input[type="submit"] {
+  background-color: orange;
+  width: 50%;
+  height: 40px;
+  border-radius: 4px;
 }

@@ -39,38 +39,42 @@ function validationForm() {
   let prenom = document.forms["contact"]["prenom"].value;
   let mail = document.forms["contact"]["mail"].value;
 
-  let errorNom = document.getElementById("errorNom");
-  let errorPrenom = document.getElementById("errorPrenom");
-  let errorMail = document.getElementById("errorMail");
+  let errorNom = document.getElementById("labName");
+  let errorPrenom = document.getElementById("labPren");
+  let errorMail = document.getElementById("labMail");
 
   // Nom
   if (numb(nom) || spec(nom)) {
-    errorNom.textContent = "\u274c Veuillez uiliser des caractères valides.";
+    errorNom.innerHTML =
+      "Nom : <br> \u274c Veuillez uiliser des caractères valides.";
     problem = true;
   } else if (!firstUpperCase(nom)) {
-    errorNom.textContent = "\u274c Doit commencer par une majuscule.";
+    errorNom.innerHTML = "Nom : <br> \u274c Doit commencer par une majuscule.";
     problem = true;
   } else {
-    errorNom.textContent = "\u2705";
+    errorNom.textContent = "\u2705 Nom : ";
   }
 
   // Prénom
   if (numb(prenom) || spec(prenom)) {
-    errorPrenom.textContent = "\u274c Veuillez uiliser des caractères valides.";
+    errorPrenom.innerHTML =
+      "Prénom : <br> \u274c Veuillez uiliser des caractères valides.";
     problem = true;
   } else if (!firstUpperCase(prenom)) {
-    errorPrenom.textContent = "\u274c Doit commencer par une majuscule.";
+    errorPrenom.innerHTML =
+      "Prénom : <br> \u274c Doit commencer par une majuscule.";
     problem = true;
   } else {
-    errorPrenom.textContent = "\u2705";
+    errorPrenom.innerHTML = "\u2705 Prénom : ";
   }
 
   // eMail
   if (!validMail(mail)) {
-    errorMail.textContent = "\u274c Veuillez entrer une adresse mail valide.";
+    errorMail.innerHTML =
+      "Email : <br> \u274c Veuillez entrer une adresse mail valide.";
     problem = true;
   } else {
-    errorMail.textContent = "\u2705";
+    errorMail.innerHTML = "\u2705 Email : ";
   }
 
   // Empecher l'envoie du form :
